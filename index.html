@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tevoh Personal Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">Tevoh Personal Tracker<small>Expenses, savings and wishes in one place</small></div>
+    <select id="cur" class="cur" aria-label="Currency"><option>KSh</option><option>$</option><option>€</option><option>£</option></select>
+  </header>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#overview" data-t="overview">Overview</a>
+    <a href="#expenses" data-t="expenses">Expenses</a>
+    <a href="#savings" data-t="savings">Savings</a>
+    <a href="#wishlist" data-t="wishlist">Wishlist</a>
+  </nav>
+  <main id="main"></main>
+  <footer><span id="note">Saved in this browser only.</span><button class="btn ghost sm" id="reset" type="button">Clear all data</button></footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
